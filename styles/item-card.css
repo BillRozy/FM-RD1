@@ -13,11 +13,11 @@
 .item-card-picture {
     width: 100%;
     height: auto;
-    max-height: 250px;
+    max-height: 39%;
 }
 
 .item-card-content {
-    padding: 1.5rem;
+    padding: 1.5em;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -26,24 +26,22 @@
 
 .item-card-content-category {
     text-transform: uppercase;
-    letter-spacing: 0.25rem;
-    font-size: 1em;
+    letter-spacing: 0.36em;
+    font-size: 0.85em;
     color: var(--secondary-font-color);
 }
 
 .item-card-content-title {
-    letter-spacing: -0.02rem;
+    letter-spacing: -0.02em;
     line-height: 1em;
-    font-size: 2.25em;
+    font-size: 2.285em;
     font-weight: 700;
-    margin: 0;
-    margin-top: 0.75rem;
 }
 
 .item-card-content-desc {
     color: var(--secondary-font-color);
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.65em;
 }
 
 .item-card-content-price-wrap {
@@ -54,7 +52,7 @@
 
 .price-current {
     color: var(--accent-green-color);
-    font-size: 2.25em;
+    font-size: 2.285em;
     font-weight: 700;
 }
 
@@ -62,6 +60,7 @@
     color: var(--secondary-font-color);
     text-decoration: line-through;
     margin-left: 1rem;
+    font-size: 0.928em;
 }
 
 .add-to-cart-btn {
@@ -88,11 +87,14 @@
 @media (width >= 1440px) {
     .item-card {
         flex-direction: row;
-        max-height: 410px;
-        max-width: 530px;
+        max-height: 450px;
+        max-width: 600px;
     }
     .item-card-picture {
         max-height: unset;
         max-width: 50%;
+    }
+    .item-card-content {
+        padding: 2.285em;
     }
 }
